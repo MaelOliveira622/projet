@@ -1,0 +1,140 @@
+.Favoris {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin-left: 30%;
+  border-radius: 15px;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  border-right: 1px solid #43772C;
+}
+
+.search-user input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #43772C;
+  border-radius: 5px;
+}
+
+.search-user {
+  width: 95%;
+}
+
+.user-links {
+  margin-bottom: 20px;
+}
+
+.user-links a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.filter-posts {
+  margin-bottom: 20px;
+}
+
+.filter-posts h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.filter-posts label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.filter-posts input {
+  margin-right: 5px;
+}
+.tweet-header {
+  border-bottom: 1px solid #43772C;
+}
+
+.tweet-actions {
+  padding: 10px;
+  border-top: 1px solid #43772C;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.profile-tweets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold; 
+  border-bottom: 1px solid #43772C;
+  padding-bottom: 10px;
+  margin-bottom: 20px; 
+  text-align: center; 
+  width: calc(100vw - 291px);
+  margin-left: -193px;
+}
+
+.accept-icon {
+  color: #43772C;
+  font-size: 24px;
+}
+.reject-icon {
+  color: red;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .Favoris {
+    border-radius: 0; 
+    margin: 0 auto; 
+  }
+  .gear-icon {
+    display: block;
+    padding-bottom: 2%;
+  }
+  .title{
+    display: none;
+  }
+  .sidebar {
+    width: 100%; /* Prend la largeur complète de l'écran */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    top: 0; /* Aligne la sidebar en haut de la fenêtre */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+    z-index: 1000; /* Place la sidebar au-dessus du contenu */
+    display: none; /* Cache la sidebar par défaut */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-right: 1px solid #43772C;
+  }
+  
+  /* Affiche la sidebar lorsqu'on clique dessus */
+  .sidebar.active {
+    display: block;
+  }
+
+  .search-user input {
+    padding: 8px;
+  }
+  
+  .user-links {
+    margin-bottom: 10px; /* Réduire la marge entre les liens */
+  }
+  
+  .filter-posts h3 {
+    margin-bottom: 5px; /* Réduire la marge en dessous du titre */
+  }
+}

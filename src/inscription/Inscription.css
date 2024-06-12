@@ -1,0 +1,67 @@
+.Inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    margin-top: -2%;
+  }
+  
+  .headerLogo {
+    width: 100%;
+    border-bottom: 1px solid #ddd;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 15%;
+    padding: 2%;
+    padding-left: 23%;
+  } 
+
+  .text {
+    padding-right: 35%;
+    text-align: center;
+  }
+  
+  form {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  
+  .formInscription {
+    padding-bottom: 2% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inscription {
+    background-color: #43772C !important;
+    color: white !important;
+    margin-bottom: 1.5% !important;
+    margin-top: 2.5% !important;
+  }
+  
+  .textfield {
+    padding-top: 2% !important;
+    padding-bottom: 1% !important;
+  }
+
+  a {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  
+  .error-message {
+    color: red;
+  }

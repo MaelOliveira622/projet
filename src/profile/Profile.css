@@ -1,0 +1,275 @@
+.profile {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  font-family: "Luciole", sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #43772C;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: calc(100vw - 292px);
+  margin-left: -176px;
+}
+
+.profile-header-left{
+  margin-left: 50px;
+}
+
+.profile-header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-header-right .edit-profile-button {
+  align-self: flex-end;
+}
+
+.edit-profile-button {
+  background-color: #43772C; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  margin-left: -70px;
+  font-size: 14px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.edit-profile-button:hover {
+  background-color: #375F23;
+}
+
+.delete-profile-button {
+  background-color: #43772C; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px;
+  margin-left: 5px; 
+  font-size: 14px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.delete-profile-button:hover {
+  background-color: #375F23;
+}
+
+.profile-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-header h2 {
+  margin: 0;
+}
+
+.profile-header p {
+  margin: 5px 0;
+}
+
+.profile-header a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.profile-header a:hover {
+  text-decoration: underline;
+}
+
+.profile-stats {
+  display: flex;
+}
+
+.profile-stats p {
+  margin-right: 20px;
+}
+
+.location-join-date {
+  display: flex;
+}
+
+.location-join-date p {
+  margin-right: 20px; 
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto; 
+  border-right: 1px solid #43772C; 
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.search-user {
+  width: 95%;
+}
+
+.tweet {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+}
+
+.input-editing {
+  border: 2px solid #43772C; 
+  border-radius: 5px; 
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-editing:focus {
+  border-color: #355c1c; 
+}
+
+.textarea-editing {
+  border: 2px solid #43772C;
+  border-radius: 5px; 
+  padding: 8px 12px; 
+  font-size: 16px;
+  outline: none; 
+  resize: vertical;
+}
+
+.textarea-editing:focus {
+  border-color: #355c1c;
+}
+
+.edit-save-button {
+  background-color: #43772C;
+  color: #fff; 
+  border: none;
+  border-radius: 5px; 
+  padding: 8px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.edit-save-button:hover {
+  background-color: #355c1c;
+}
+
+.edit-save-button {
+  background-color: #43772C;
+  color: #fff; 
+  border: none;
+  border-radius: 5px; 
+  padding: 8px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.edit-save-button:hover {
+  background-color: #355c1c;
+}
+.modification {
+  padding-left: 40%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px); /* Décale le menu déroulant vers le bas de 10px par rapport au bouton */
+  left: 0;
+  z-index: 1000;
+  display: none; /* Le menu est caché par défaut */
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.dropdown-toggle:focus + .dropdown-menu {
+  display: block; /* Affiche le menu déroulant lorsque le bouton est en focus */
+}
+
+.dropdown-toggle:focus {
+  outline: none; /* Supprime la bordure de mise au point sur le bouton */
+}
+
+.gear-icon {
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  z-index: 999;
+  display: none; /* Cacher par défaut */
+}
+
+
+@media screen and (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gear-icon {
+    display: block;
+  }
+
+  .profile-info,
+  .location-join-date,
+  .bio {
+    padding-left: 25%;    
+  }
+  .profile-header img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile-header-right {
+    margin-top: 20px;
+    text-align: center; /* Centrer le contenu dans la partie droite du header */
+    margin-left: 0; /* Réinitialiser la marge à gauche */
+  }
+
+  .profile-header-right .edit-profile-button,
+  .profile-header-right .delete-profile-button {
+    margin-left: 0; /* Réinitialiser la marge à gauche */
+  }
+
+  .profile-header-right .dropdown-toggle {
+    margin: 20px 0; /* Ajouter de l'espace autour du dropdown toggle */
+  }
+  .edit-profile-button,
+  .delete-profile-button,
+  .edit-save-button {
+    font-size: 10px; /* Réduisez la taille de la police pour les appareils mobiles */
+    padding: 6px 12px; /* Ajustez la taille du padding pour les appareils mobiles */
+    display: inline-block; /* Affiche les boutons en ligne */
+    margin: 0 5px; /* Ajoute de l'espace entre les boutons */
+  }
+  .profile-header {
+    border-bottom: 1px solid #355c1c;
+    width: calc(100% + 352px); /* Ajuste la largeur pour inclure la barre de défilement du menu */
+    margin-left: -176px; /* Centre la barre de défilement du menu */
+  }
+}
